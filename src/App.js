@@ -1,4 +1,5 @@
 import Header from './Layouts/Header/Header';
+import './App.css';
 
 function App() {
   return (

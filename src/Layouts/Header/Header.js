@@ -2,15 +2,21 @@ import React from 'react';
 import './Header.scss';
 
 function Header() {
+
+  const handleSideNav = () => {
+    console.log("tres");
+    var x = document.getElementById("myTopnav");
+    if (x.className === "header-container") {
+      x.className += " responsive";
+    } else {
+      x.className = "header-container";
+    }
+  }
+
   return (
     <>
-      <nav className='header-container'>
+      <nav className={'header-container responsive'} id="myTopnav">
         <h3 className='logo'>Harish.dev</h3>
-        {/* Hamburger icon  */}
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu">
-          <span class="hamb-line"></span>
-          </label>
         <ul>
           <li>
             <a href='#home'>
@@ -32,9 +38,13 @@ function Header() {
               Contact
             </a>
           </li>
+          <li className='toggle-nav-icon'>
+            <a href="javascript:void(0);" class="icon" onClick={handleSideNav}>
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
         </ul>
       </nav>
-    
     </>
   )
 }
