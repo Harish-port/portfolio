@@ -3,14 +3,31 @@ import './Header.scss';
 
 function Header() {
   return (
-    <div className='header-container'>
-        <p>Home</p>
-        <p>About Myself</p>
-        <p>Skills</p>
-        <p>Certifications</p>
-        <p>Projects</p>
-        <p>Contact</p>
-    </div>
+    <nav className='header-container'>
+      <h3 className='logo'>Harish.dev</h3>
+      <ul>
+        <li>
+          <a href='#home'>
+          </a>
+          Home
+        </li>
+        <li>
+          <a href='#home'>
+          </a>
+          About
+        </li>
+        <li>
+          <a href='#home'>
+          </a>
+          Projects
+        </li>
+        <li>
+          <a href='#home'>
+          </a>
+          Contact
+        </li>
+      </ul>
+    </nav>
   )
 }
 
