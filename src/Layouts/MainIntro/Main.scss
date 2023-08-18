@@ -1,0 +1,30 @@
+.main-container {
+    margin: 0 auto;
+    max-width: 65rem;
+    padding: 0 4rem;
+
+    .content {
+        align-items: center;
+        display: flex;
+        gap: 10rem;
+        height: 65rem;
+        justify-content: center;
+        position: relative;
+
+        .hero-main {
+            align-items: center;
+            display: flex;
+            gap: 10rem;
+            justify-content: center;
+            position: relative;
+
+            h1 {
+                color: #2d2e32;
+                font-size: 5.5rem;
+                line-height: 1.2;
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
