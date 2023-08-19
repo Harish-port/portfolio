@@ -15,7 +15,7 @@ function Main() {
                             </h1>
                             <img src="https://stefantopalovicdev.vercel.app/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="NA" />
                             <p>
-                                Hi, I'm Harish S. A passionate Front-end React Developer based in Bengaluru. 📍
+                                Hi, I'm Harish. A passionate Front-End React Developer based in Karnataka, Bengaluru. 📍
                             </p>
                             <span>
                                 <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/harish-s-906340175/">
@@ -36,6 +36,21 @@ function Main() {
                             <ul>
                                 {
                                     data.skills.map((info, i) => (
+                                        <li key={i}>
+                                            <img src={info.image} alt="Logos" />
+                                            <p className='img-description'>{info.name}</p>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="tools">
+                        <p className='tech-stack-para'>Tools</p>
+                        <div className="logos">
+                            <ul>
+                                {
+                                    data.tools.map((info, i) => (
                                         <li key={i}>
                                             <img src={info.image} alt="Logos" />
                                             <p className='img-description'>{info.name}</p>

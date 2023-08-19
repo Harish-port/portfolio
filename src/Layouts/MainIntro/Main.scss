@@ -69,7 +69,7 @@
                 }
             }
 
-            .skills {
+            .skills,.tools {
                 align-items: center;
                 bottom: 3.125rem;
                 color: #767676;
@@ -83,7 +83,7 @@
                     color: #2d2e32;
                     font-family: Mulish, sans-serif;
                     font-weight: 600;
-                    margin-right: 5rem;
+                    margin-right: 4rem;
                     padding-right: 2rem;
                 }
 
@@ -104,13 +104,14 @@
                             justify-content: center;
                             width: 6.5rem;
                             position: relative;
-                          .img-description{
-                            position: absolute;
-                            top: 7.5rem;
-                            font-size: 1.5rem;
-                            font-weight: 600;
-                            color: black;
-                          }
+
+                            .img-description {
+                                position: absolute;
+                                top: 7.5rem;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                color: black;
+                            }
                         }
 
                         li img {
@@ -122,6 +123,11 @@
                 }
             }
 
+            .tools {
+                top: 72rem;
+                left: 4.5rem;
+                margin-top: 2rem;
+            }
         }
     }
 }
