@@ -78,7 +78,7 @@
                 left: 0;
                 position: absolute;
 
-                p {
+                .tech-stack-para {
                     border-right: 2px solid rgba(45, 46, 50, .5);
                     color: #2d2e32;
                     font-family: Mulish, sans-serif;
@@ -103,6 +103,14 @@
                             height: 6.5rem;
                             justify-content: center;
                             width: 6.5rem;
+                            position: relative;
+                          .img-description{
+                            position: absolute;
+                            top: 7.5rem;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            color: black;
+                          }
                         }
 
                         li img {

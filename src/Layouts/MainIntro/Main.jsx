@@ -30,30 +30,37 @@ function Main() {
                         </div>
                     </div>
                     <div className="skills">
-                        <p>Tech Stack</p>
+                        <p className='tech-stack-para'>Tech Stack</p>
                         <div className="logos">
                             <ul>
                                 <li>
-                                    <img src='https://img.icons8.com/color/144/null/html-5' alt="" /><br />
+                                    <img src='https://img.icons8.com/color/144/null/html-5' alt="" />
+                                    <p className='img-description'>HTML5</p>
                                 </li>
                                 <li>
                                     <img src='https://img.icons8.com/color/144/null/css3' alt="" />
+                                    <p className='img-description'>CSS3</p>
                                 </li>
                                 <li>
                                     <img src='https://img.icons8.com/?size=512&id=QBqFNfPPB2Kx&format=png' alt="" />
+                                    <p className='img-description'>SASS</p>
                                 </li>
                                 <li>
                                     <img src='https://img.icons8.com/color/144/null/javascript' alt="" />
+                                    <p className='img-description'>Javascript</p>
                                 </li>
                                 <li>
                                     <img src='https://img.icons8.com/?size=512&id=bzf0DqjXFHIW&format=png' alt="" />
+                                    <p className='img-description'>ReactJs</p>
                                 </li>
                                 <li>
                                     <img src='https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png' alt="" />
+                                    <p className='img-description'>Redux</p>
                                 </li>
 
                                 <li>
                                     <img src='https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png' alt="" />
+                                    <p className='img-description'>Typescript</p>
                                 </li>
                             </ul>
                         </div>
