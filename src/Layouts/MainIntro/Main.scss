@@ -69,22 +69,70 @@
                 }
             }
 
-            .skills,.tools {
+            .skills-tools-section {
                 align-items: center;
                 bottom: 3.125rem;
                 color: #767676;
                 display: flex;
                 font-size: 1.7rem;
                 left: 0;
+                right: 50%;
                 position: absolute;
+                top: 51rem;
+                width: 100%;
+                justify-content: center;
 
-                .tech-stack-para {
-                    border-right: 2px solid rgba(45, 46, 50, .5);
+                .toggle-button {
+                    display: flex;
+                    gap: 1rem;
+                    width: 30rem;
+                    text-align: center;
+                    justify-content: center;
+                    line-height: 3rem;
+                }
+
+                .tech-stack-list,
+                .tools-list {
+                    display: inline-block;
+                    outline: 0;
+                    border: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    font-size: 1.8rem;
+                    height: 40px;
+                    width: 15rem;
+                    background-color: #9147ff;
+                    color: white;
+                    padding: 0 20px;
+
+                    &:hover {
+                        background-color: #772ce8;
+                    }
+
+                }
+            }
+
+            .skills,
+            .tools {
+                align-items: center;
+                bottom: 3.125rem;
+                color: #767676;
+                display: flex;
+                font-size: 1.7rem;
+                left: 0;
+                top: 65rem;
+                position: absolute;
+                width: 100%;
+                justify-content: center;
+
+                .tech-stack-list {
+                    // border-right: 2px solid rgba(45, 46, 50, .5);
                     color: #2d2e32;
                     font-family: Mulish, sans-serif;
                     font-weight: 600;
-                    margin-right: 4rem;
-                    padding-right: 2rem;
+                    // margin-right: 4rem;
+                    // padding-right: 2rem;
                 }
 
                 .logos {
@@ -122,6 +170,8 @@
                     }
                 }
             }
+
+
 
             .tools {
                 top: 72rem;

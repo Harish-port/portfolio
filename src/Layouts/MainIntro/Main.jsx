@@ -30,8 +30,17 @@ function Main() {
                             <img src={Hero} alt="NA" />
                         </div>
                     </div>
+                    <div className="skills-tools-section">
+                        <div className="toggle-button">
+                            <button className='tech-stack-list'>Tech Stack</button>
+                            <button className='tools-list'>Tools</button>
+                        </div>
+                    </div>
                     <div className="skills">
-                        <p className='tech-stack-para'>Tech Stack</p>
+                        {/* <div className="toggle-button">
+                            <button className='tech-stack-list'>Tech Stack</button>
+                            <button className='tools-list'>Tools</button>
+                        </div> */}
                         <div className="logos">
                             <ul>
                                 {
@@ -45,7 +54,7 @@ function Main() {
                             </ul>
                         </div>
                     </div>
-                    <div className="tools">
+                    {/* <div className="tools">
                         <p className='tech-stack-para'>Tools</p>
                         <div className="logos">
                             <ul>
@@ -59,7 +68,7 @@ function Main() {
                                 }
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

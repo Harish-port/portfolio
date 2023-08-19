@@ -4,7 +4,6 @@ import './Header.scss';
 function Header() {
 
   const handleSideNav = () => {
-    console.log("tres");
     var x = document.getElementById("myTopnav");
     if (x.className === "header-container") {
       x.className += " responsive";
