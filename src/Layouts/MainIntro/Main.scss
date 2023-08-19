@@ -52,7 +52,8 @@
                         a {
                             color: #2d2e32;
                             font-size: 3rem;
-                            &:hover{
+
+                            &:hover {
                                 color: #317EFB;
                             }
                         }
@@ -67,6 +68,52 @@
                     }
                 }
             }
+
+            .skills {
+                align-items: center;
+                bottom: 3.125rem;
+                color: #767676;
+                display: flex;
+                font-size: 1.7rem;
+                left: 0;
+                position: absolute;
+
+                p {
+                    border-right: 2px solid rgba(45, 46, 50, .5);
+                    color: #2d2e32;
+                    font-family: Mulish, sans-serif;
+                    font-weight: 600;
+                    margin-right: 7rem;
+                    padding-right: 2rem;
+                }
+
+                .logos {
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        gap: 3rem;
+
+                        li {
+                            align-items: center;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+                            cursor: pointer;
+                            display: flex;
+                            height: 6.5rem;
+                            justify-content: center;
+                            width: 6.5rem;
+                        }
+
+                        li img {
+                            height: 3.4rem;
+                            width: 3.4rem rem;
+                        }
+
+                    }
+                }
+            }
+
         }
     }
 }

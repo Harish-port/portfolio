@@ -29,9 +29,35 @@ function Main() {
                             <img src={Hero} alt="NA" />
                         </div>
                     </div>
-                    {/* <div className="skills">
-                        Skills
-                    </div> */}
+                    <div className="skills">
+                        <p>Tech Stack</p>
+                        <div className="logos">
+                            <ul>
+                                <li>
+                                    <img src='https://img.icons8.com/color/144/null/html-5' alt="" /><br />
+                                </li>
+                                <li>
+                                    <img src='https://img.icons8.com/color/144/null/css3' alt="" />
+                                </li>
+                                <li>
+                                    <img src='https://img.icons8.com/?size=512&id=QBqFNfPPB2Kx&format=png' alt="" />
+                                </li>
+                                <li>
+                                    <img src='https://img.icons8.com/color/144/null/javascript' alt="" />
+                                </li>
+                                <li>
+                                    <img src='https://img.icons8.com/?size=512&id=bzf0DqjXFHIW&format=png' alt="" />
+                                </li>
+                                <li>
+                                    <img src='https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png' alt="" />
+                                </li>
+
+                                <li>
+                                    <img src='https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png' alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
