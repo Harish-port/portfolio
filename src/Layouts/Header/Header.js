@@ -39,8 +39,8 @@ function Header() {
             </a>
           </li>
           <li className='toggle-nav-icon'>
-            <a href="javascript:void(0);" class="icon" onClick={handleSideNav}>
-              <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" className="icon" onClick={handleSideNav}>
+              <i className="fa fa-bars"></i>
             </a>
           </li>
         </ul>

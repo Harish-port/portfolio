@@ -1,8 +1,32 @@
 {
     "skills": [
         {
+            "name": "HTML5",
+            "image": "https://img.icons8.com/color/144/null/html-5"
+        },
+        {
+            "name": "CSS3",
+            "image": "https://img.icons8.com/color/144/null/css3"
+        },
+        {
+            "name": "SASS",
+            "image": "https://img.icons8.com/?size=512&id=QBqFNfPPB2Kx&format=png"
+        },
+        {
             "name": "Javascript",
-            "image": "s"
+            "image": "https://img.icons8.com/color/144/null/javascript"
+        },
+        {
+            "name": "ReactJs",
+            "image": "https://img.icons8.com/?size=512&id=bzf0DqjXFHIW&format=png"
+        },
+        {
+            "name": "Redux",
+            "image": "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png"
+        },
+        {
+            "name": "Typescript",
+            "image": "https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png"
         }
     ]
 }
