@@ -3,7 +3,7 @@
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, .09);
     display: flex;
-    height: 5rem;
+    height: 8rem;
     justify-content: space-between;
     left: 0;
     padding: 1.563rem 2.5rem 1.563rem 3.125rem;
@@ -15,14 +15,19 @@
     .logo {
         color: #2d2e32;
         cursor: pointer;
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin-right: 30px;
+        margin-left: 2rem;
     }
 
     ul {
         display: flex;
-        gap: 1.5rem;
+        gap: 2rem;
         list-style: none;
+
+        li a:hover {
+            color: #317EFB;
+        }
 
         .icon {
             display: none;
@@ -31,7 +36,7 @@
         a {
             color: #2d2e32;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 1.8rem;
             text-decoration: none;
             transition: all .23s;
         }
@@ -56,6 +61,7 @@
     .header-container.responsive .logo {
         display: none;
     }
+
     .header-container.responsive ul {
         display: inline-block;
         position: absolute;
@@ -64,21 +70,24 @@
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
     }
-    .header-container.responsive ul li.toggle-nav-icon{
+
+    .header-container.responsive ul li.toggle-nav-icon {
         position: absolute;
-        top: -15%;
-        right: -270.2%;
+        top: -100%;
+        right: -370%;
     }
+
     .header-container.responsive {
-        position: relative;
+        position: fixed;
         box-shadow: none;
         height: 100vh;
     }
 
-   
-    .header-container.responsive ul li{
-    margin-bottom:50px;
+
+    .header-container.responsive ul li {
+        margin-bottom: 50px;
     }
+
     .header-container.responsive a {
         float: none;
         display: block;

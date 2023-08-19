@@ -1,29 +1,71 @@
-.main-container {
-    margin: 0 auto;
-    max-width: 65rem;
-    padding: 0 4rem;
+.section-wrapper {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
 
-    .content {
-        align-items: center;
-        display: flex;
-        gap: 10rem;
-        height: 65rem;
-        justify-content: center;
-        position: relative;
+    .main-container {
+        margin: 0 auto;
+        max-width: 107rem;
+        padding: 0 4rem;
 
-        .hero-main {
+        .content {
             align-items: center;
             display: flex;
             gap: 10rem;
+            height: 65rem;
             justify-content: center;
             position: relative;
 
-            h1 {
-                color: #2d2e32;
-                font-size: 5.5rem;
-                line-height: 1.2;
-                margin-bottom: 2rem;
-                margin-top: 2rem;
+            .hero-main {
+                display: flex;
+                align-items: center;
+                gap: 10rem;
+                justify-content: center;
+                position: relative;
+
+                .hero-text {
+                    h1 {
+                        color: #2d2e32;
+                        font-size: 5.5rem;
+                        line-height: 1.2;
+                        margin-bottom: 2rem;
+                        margin-top: 2rem;
+                    }
+
+                    p {
+                        color: #555;
+                        font-family: Mulish, sans-serif;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        line-height: 1.6;
+                    }
+
+                    span {
+                        cursor: pointer;
+                        display: flex;
+                        gap: 1.3rem;
+                        margin: 2.5rem 0;
+
+                        a {
+                            color: #2d2e32;
+                            font-size: 3rem;
+                            &:hover{
+                                color: #317EFB;
+                            }
+                        }
+                    }
+
+                    img {
+                        height: 6rem;
+                        position: absolute;
+                        right: 13rem;
+                        top: 8.7rem;
+                        width: 6rem;
+                    }
+                }
             }
         }
     }
