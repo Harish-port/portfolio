@@ -25,36 +25,34 @@
             "image": "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png"
         },
         {
+            "name": "Jest",
+            "image": "https://whatthelogo.com/storage/logos/jest-271146.png"
+        },
+        {
             "name": "Typescript",
             "image": "https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png"
         }
     ],
-    "tools":[
+    "tools": [
         {
-
-            "name":"Git",
-            "image":"https://img.icons8.com/?size=512&id=38389&format=png"
+            "name": "Git",
+            "image": "https://img.icons8.com/?size=512&id=38389&format=png"
         },
         {
-
-            "name":"Postman",
-            "image":"https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png"
+            "name": "Postman",
+            "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png"
         },
         {
-
-            "name":"Jira",
-            "image":"https://img.icons8.com/?size=512&id=oROcPah5ues6&format=png"
+            "name": "Jira",
+            "image": "https://img.icons8.com/?size=512&id=oROcPah5ues6&format=png"
         },
         {
-
-            "name":"Docker",
-            "image":"https://img.icons8.com/?size=512&id=cdYUlRaag9G9&format=png"
+            "name": "Docker",
+            "image": "https://img.icons8.com/?size=512&id=cdYUlRaag9G9&format=png"
         },
         {
-
-            "name":"Kubernetes",
-            "image":"https://img.icons8.com/?size=512&id=cvzmaEA4kC0o&format=png"
+            "name": "Kubernetes",
+            "image": "https://img.icons8.com/?size=512&id=cvzmaEA4kC0o&format=png"
         }
-
     ]
 }

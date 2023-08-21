@@ -73,8 +73,11 @@
 
     .header-container.responsive ul li.toggle-nav-icon {
         position: absolute;
-        top: -100%;
-        right: -370%;
+        bottom: 51rem;
+        right: -426%;
+        &:hover{
+            color: #317EFB;
+        }
     }
 
     .header-container.responsive {

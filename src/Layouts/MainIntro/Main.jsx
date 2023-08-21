@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Main.scss';
-import Hero from '../../Assets/Images/trek2.png'
+import Hero from '../../Assets/Images/trek55.png'
 import data from '../../Utils/data.json';
 function Main() {
     const [highlightedButton, setHighlightedButton] = useState(1);
@@ -14,9 +14,9 @@ function Main() {
                     <div className="hero-main">
                         <div className="hero-text">
                             <h1>
-                                Front-End React Developer
+                                Front-End React Developer <img src="https://stefantopalovicdev.vercel.app/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="NA" />
                             </h1>
-                            <img src="https://stefantopalovicdev.vercel.app/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="NA" />
+                            {/* <img src="https://stefantopalovicdev.vercel.app/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="NA" /> */}
                             <p>
                                 Hi, I'm Harish. A passionate Front-End React Developer based in Karnataka, Bengaluru. 📍
                             </p>
@@ -34,10 +34,6 @@ function Main() {
                         </div>
                     </div>
                     <div className="skills-tools-section">
-                        {/* <div className="toggle-button">
-                            <button className={'tech-stack-list' + highlightedButton === 1 ? 'selected' : ''} onClick={() => handleButtonClick(1)}>Tech Stack</button>
-                            <button className={'tools-list' + highlightedButton === 2 ? 'selected' : ''} onClick={() => handleButtonClick(2)}>Tools</button>
-                        </div> */}
                         <div className="toggle-button">
                             <button className={`tech-stack-list ${highlightedButton === 1 ? 'selected' : 'unselected'}`} onClick={() => handleButtonClick(1)} >Tech Stack</button>
                             <button className={`tools-list ${highlightedButton === 2 ? 'selected' : 'unselected'}`} onClick={() => handleButtonClick(2)}>Tools</button>
