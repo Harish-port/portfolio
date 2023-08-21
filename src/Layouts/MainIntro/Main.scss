@@ -84,7 +84,7 @@
 
                 .toggle-button {
                     display: flex;
-                    gap: 1rem;
+                    gap: 2rem;
                     width: 30rem;
                     text-align: center;
                     justify-content: center;
@@ -95,23 +95,37 @@
                 .tools-list {
                     display: inline-block;
                     outline: 0;
-                    border: none;
+                    // border: none;
                     cursor: pointer;
-                    font-weight: 600;
+                    font-weight: 500;
                     border-radius: 4px;
                     font-size: 1.8rem;
                     height: 40px;
                     width: 15rem;
-                    background-color: #9147ff;
-                    color: white;
+                    // background-color: #2D2E32;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+                    // color: white;
                     padding: 0 20px;
+                    background-color: white;
+                    color: black;
+                    border: 1px solid black;
 
                     &:hover {
-                        background-color: #772ce8;
+                        background-color: black;
+                        color: white;
                     }
-
+                    &.selected {
+                          background-color: black;
+                          color: white;
+                    }
+                    &.unselected{
+                        background-color: white;
+                        color: black;
+                    }
                 }
             }
+
+           
 
             .skills,
             .tools {
@@ -173,11 +187,11 @@
 
 
 
-            .tools {
-                top: 72rem;
-                left: 4.5rem;
-                margin-top: 2rem;
-            }
+            // .tools {
+            //     top: 72rem;
+            //     left: 4.5rem;
+            //     margin-top: 2rem;
+            // }
         }
     }
 }

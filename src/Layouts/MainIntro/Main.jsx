@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Main.scss';
 import Hero from '../../Assets/Images/trek2.png'
 import data from '../../Utils/data.json';
 function Main() {
-    console.log(data, "ests");
+    const [highlightedButton, setHighlightedButton] = useState(1);
+    const handleButtonClick = (buttonId) => {
+        setHighlightedButton(buttonId)
+    }
     return (
         <section className='section-wrapper'>
             <div className='main-container'>
@@ -31,44 +34,49 @@ function Main() {
                         </div>
                     </div>
                     <div className="skills-tools-section">
-                        <div className="toggle-button">
-                            <button className='tech-stack-list'>Tech Stack</button>
-                            <button className='tools-list'>Tools</button>
-                        </div>
-                    </div>
-                    <div className="skills">
                         {/* <div className="toggle-button">
-                            <button className='tech-stack-list'>Tech Stack</button>
-                            <button className='tools-list'>Tools</button>
+                            <button className={'tech-stack-list' + highlightedButton === 1 ? 'selected' : ''} onClick={() => handleButtonClick(1)}>Tech Stack</button>
+                            <button className={'tools-list' + highlightedButton === 2 ? 'selected' : ''} onClick={() => handleButtonClick(2)}>Tools</button>
                         </div> */}
-                        <div className="logos">
-                            <ul>
-                                {
-                                    data.skills.map((info, i) => (
-                                        <li key={i}>
-                                            <img src={info.image} alt="Logos" />
-                                            <p className='img-description'>{info.name}</p>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
+                        <div className="toggle-button">
+                            <button className={`tech-stack-list ${highlightedButton === 1 ? 'selected' : 'unselected'}`} onClick={() => handleButtonClick(1)} >Tech Stack</button>
+                            <button className={`tools-list ${highlightedButton === 2 ? 'selected' : 'unselected'}`} onClick={() => handleButtonClick(2)}>Tools</button>
                         </div>
                     </div>
-                    {/* <div className="tools">
-                        <p className='tech-stack-para'>Tools</p>
-                        <div className="logos">
-                            <ul>
-                                {
-                                    data.tools.map((info, i) => (
-                                        <li key={i}>
-                                            <img src={info.image} alt="Logos" />
-                                            <p className='img-description'>{info.name}</p>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
+                    {
+                        highlightedButton === 1 &&
+                        <div className="skills">
+                            <div className="logos">
+                                <ul>
+                                    {
+                                        data.skills.map((info, i) => (
+                                            <li key={i}>
+                                                <img src={info.image} alt="Logos" />
+                                                <p className='img-description'>{info.name}</p>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
                         </div>
-                    </div> */}
+                    }
+                    {
+                        highlightedButton === 2 &&
+                        <div className="tools">
+                            <div className="logos">
+                                <ul>
+                                    {
+                                        data.tools.map((info, i) => (
+                                            <li key={i}>
+                                                <img src={info.image} alt="Logos" />
+                                                <p className='img-description'>{info.name}</p>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    }
                 </div>
             </div>
         </section>
