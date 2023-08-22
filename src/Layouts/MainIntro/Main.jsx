@@ -20,7 +20,7 @@ function Main() {
                             <p>
                                 Hi, I'm Harish. A passionate Front-End React Developer based in Karnataka, Bengaluru. 📍
                             </p>
-                            <span>
+                            <span className='social-links'>
                                 <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/harish-s-906340175/">
                                     <i className="fa-brands fa-linkedin"></i>
                                 </a>
@@ -33,6 +33,7 @@ function Main() {
                             <img src={Hero} alt="NA" />
                         </div>
                     </div>
+                    <p className='skills-heading'>Skills</p>
                     <div className="skills-tools-section">
                         <div className="toggle-button">
                             <button className={`tech-stack-list ${highlightedButton === 1 ? 'selected' : 'unselected'}`} onClick={() => handleButtonClick(1)} >Tech Stack</button>

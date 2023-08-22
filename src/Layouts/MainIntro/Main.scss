@@ -69,6 +69,21 @@
                 }
             }
 
+            .skills-heading {
+                align-items: center;
+                bottom: 3.125rem;
+                color: black;
+                display: flex;
+                font-weight: bold;
+                font-size: 2rem;
+                left: 0;
+                right: 50%;
+                position: absolute;
+                top: 41rem;
+                width: 100%;
+                justify-content: center;
+            }
+
             .skills-tools-section {
                 align-items: center;
                 bottom: 3.125rem;
@@ -161,7 +176,7 @@
                             align-items: center;
                             background-color: #fff;
                             border-radius: 50%;
-                            box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+                            box-shadow: 0 0 0.625rem rgba(0, 0, 0, .09);
                             cursor: pointer;
                             display: flex;
                             height: 6.5rem;
@@ -186,14 +201,57 @@
                     }
                 }
             }
-
-
-
-            // .tools {
-            //     top: 72rem;
-            //     left: 4.5rem;
-            //     margin-top: 2rem;
-            // }
         }
     }
+}
+
+// Responsive
+
+@media screen and (max-width: 768px) {
+    .section-wrapper .main-container .content {
+        .hero-main {
+            flex-direction: column-reverse;
+            margin-top: 25rem;
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .skills-tools-section {
+            top: 80rem;
+        }
+
+        .section-wrapper .main-container {
+            margin: 0;
+        }
+
+        .hero-text .social-links {
+            justify-content: center;
+        }
+
+        .skills-heading {
+            position: absolute;
+            top: 80rem;
+        }
+
+        .skills-tools-section {
+            position: absolute;
+            top: 85rem;
+        }
+
+        .skills .logos ul,
+        .tools .logos ul {
+            display: grid;
+            grid-template-rows: 119px 119px;
+            grid-template-columns: 71px 71px 71px 71px 71px;
+        }
+
+        .skills {
+            top: 103rem;
+        }
+
+        .tools {
+            top: 103rem;
+        }
+    }
+
 }
