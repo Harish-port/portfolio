@@ -18,7 +18,7 @@ function Header() {
         <h3 className='logo'>Harish.dev</h3>
         <ul>
           <li>
-            <a href='#header'>
+            <a href='#home'>
               Home
             </a>
           </li>
@@ -33,7 +33,7 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href='#contact'>
+            <a href='#footer'>
               Contact
             </a>
           </li>

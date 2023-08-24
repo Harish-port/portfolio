@@ -6,5 +6,117 @@
         margin: 0 auto;
         max-width: 107rem;
         padding: 0 4rem;
+
+        .project-content {
+            .project-title {
+                color: #2d2e32;
+                font-size: 1.7rem;
+                margin-bottom: 2rem;
+                position: relative;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #147efb;
+                font-size: 1.7rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+            }
+
+            .project-description {
+                color: #767676;
+                font-size: 1.7rem;
+                font-weight: 500;
+                text-align: center;
+                text-transform: none;
+                margin-bottom: 1rem;
+            }
+
+            h4 {
+                color: #2d2e32;
+                font-size: 2.5rem;
+                margin-bottom: 6rem;
+            }
+
+            .projects-list-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
+
+                .projects-list {
+                    display: flex;
+                    gap: 7rem;
+                    height: 40rem;
+                    padding: 2rem;
+                    background-color: #fff;
+                    border-radius: 1.7rem;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+                    .project-display {
+                        img {
+                            background-color: hsla(0, 0%, 46%, .2);
+                            border-radius: 1.7rem;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                            height: auto;
+                            overflow: hidden;
+                            width: 53rem;
+                        }
+                    }
+
+                    .project-info {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        width: 30rem;
+
+                        .tech-stack {
+
+                            display: flex;
+                            gap: 1rem;
+                            justify-content: center;
+                            margin-top: 1rem;
+
+                            .tech1,
+                            .tech2 {
+                                background-color: #fff;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                                color: #000 !important;
+                                font-family: Mulish, sans-serif !important;
+                                font-weight: 600 !important;
+                                padding: 1rem 1.3rem;
+                                margin-bottom: 1rem;
+                                font-size: 1.7rem;
+                                font-weight: 500;
+                                text-align: center;
+                                text-transform: none;
+                            }
+                        }
+
+                        .project-source-view {
+                            display: flex;
+                            gap: 1rem;
+                            justify-content: space-evenly;
+                            margin-top: 3rem;
+
+                            a {
+                                color: #2d2e32;
+                                font-size: 1.7rem;
+                                font-weight: 500;
+                                gap: 5px;
+                                text-decoration: none;
+                                align-items: center;
+                                display: flex;
+
+                                &:hover {
+                                    color: #317EFB;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

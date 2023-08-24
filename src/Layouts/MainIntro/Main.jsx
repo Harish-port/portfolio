@@ -8,7 +8,7 @@ function Main() {
         setHighlightedButton(buttonId)
     }
     return (
-        <section className='section-wrapper' id='about'>
+        <section className='section-wrapper' id='home'>
             <div className='main-container'>
                 <div className="content">
                     <div className="hero-main">
