@@ -2,7 +2,7 @@
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 110vh;
     position: relative;
     width: 100%;
 
@@ -52,6 +52,8 @@
                         display: flex;
                         gap: 1.3rem;
                         margin: 2.5rem 0;
+                        position: relative;
+                        z-index: 2;
 
                         a {
                             color: #2d2e32;
@@ -208,6 +210,10 @@
 // Responsive
 
 @media screen and (max-width: 768px) {
+    .section-wrapper {
+        height: 115rem;
+    }
+
     .section-wrapper .main-container .content {
         .hero-main {
             flex-direction: column-reverse;
@@ -243,6 +249,8 @@
             display: grid;
             grid-template-rows: 119px 119px;
             grid-template-columns: 71px 71px 71px 71px 71px;
+            grid-column-gap: 23px;
+            grid-row-gap: 1px;
         }
 
         .skills {

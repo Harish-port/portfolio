@@ -13,27 +13,27 @@ function Header() {
   }
 
   return (
-    <>
+    <div id='header'>
       <nav className={'header-container responsive'} id="myTopnav">
         <h3 className='logo'>Harish.dev</h3>
         <ul>
           <li>
-            <a href='#home'>
+            <a href='#header'>
               Home
             </a>
           </li>
           <li>
-            <a href='#home'>
+            <a href='#about'>
               About
             </a>
           </li>
           <li>
-            <a href='#home'>
+            <a href='#projects'>
               Projects
             </a>
           </li>
           <li>
-            <a href='#home'>
+            <a href='#contact'>
               Contact
             </a>
           </li>
@@ -44,7 +44,7 @@ function Header() {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   )
 }
 
