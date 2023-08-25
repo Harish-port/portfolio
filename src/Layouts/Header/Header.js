@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import './Header.scss';
 
@@ -38,7 +39,7 @@ function Header() {
             </a>
           </li>
           <li className='toggle-nav-icon'>
-            <a href="javascript:void(0);" className="icon" onClick={handleSideNav}>
+            <a href="/#" className="icon" onClick={handleSideNav}>
               <i className="fa fa-bars"></i>
             </a>
           </li>
