@@ -49,11 +49,13 @@
 
     .header-container ul li a {
         display: none;
+        font-size: 4rem;
     }
 
     .header-container ul li a.icon {
         float: right;
         display: block;
+        font-size: 4rem;
     }
 }
 
@@ -73,8 +75,8 @@
 
     .header-container.responsive ul li.toggle-nav-icon {
         position: absolute;
-        bottom: 51rem;
-        right: -426%;
+        bottom: 56rem;
+        left: 39rem;
         &:hover{
             color: #317EFB;
         }
@@ -83,7 +85,7 @@
     .header-container.responsive {
         position: fixed;
         box-shadow: none;
-        height: 100vh;
+        height: 110vh;
     }
 
 

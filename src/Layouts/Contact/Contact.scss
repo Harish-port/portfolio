@@ -1,0 +1,90 @@
+.contact-container {
+    background-color: white;
+    padding: 8rem 0;
+
+    .contact-wrapper {
+        margin: 0 auto;
+        max-width: 107rem;
+        padding: 0 4rem;
+
+        .contact-info {
+            .contact-title {
+                color: #147efb;
+                font-size: 1.7rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+            }
+
+            .contact-hit-me {
+                color: #2d2e32;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+        }
+
+        .contact-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8rem;
+            margin-top: 6rem;
+
+            .contact__icon-box {
+                align-items: center;
+                display: flex;
+                gap: 1.5rem;
+
+                span {
+                    background-color: #fff;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                    padding: 2.3rem;
+
+                    i {
+                        color: #147efb;
+                        font-size: 3rem;
+                    }
+                }
+
+                .contact__info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+                    h3 {
+                        color: #2d2e32;
+                        font-size: 1.7rem;
+                    }
+
+                    p,
+                    a {
+                        color: #2d2e32;
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+@media screen and (max-width: 768px) {
+    .contact-container{
+        .contact-wrapper{
+            .contact-info{
+                text-align: center;
+            }
+            .contact-icons{
+                flex-direction: column;
+                align-items: center;
+                .contact__icon-box{
+                    flex-direction: column;
+                    .contact__info{
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+}

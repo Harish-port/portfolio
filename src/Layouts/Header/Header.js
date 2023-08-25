@@ -18,22 +18,22 @@ function Header() {
         <h3 className='logo'>Harish.dev</h3>
         <ul>
           <li>
-            <a href='#home'>
+            <a onClick={handleSideNav} href='#home'>
               Home
             </a>
           </li>
           <li>
-            <a href='#about'>
+            <a onClick={handleSideNav} href='#about'>
               About
             </a>
           </li>
           <li>
-            <a href='#projects'>
+            <a onClick={handleSideNav} href='#projects'>
               Projects
             </a>
           </li>
           <li>
-            <a href='#footer'>
+            <a onClick={handleSideNav} href='#contact'>
               Contact
             </a>
           </li>

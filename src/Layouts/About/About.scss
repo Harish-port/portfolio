@@ -1,5 +1,6 @@
 .about-wrapper {
-    padding:15rem 0;
+    padding: 15rem 0;
+
     .about-container {
         display: flex;
         gap: 5rem;
@@ -31,7 +32,6 @@
                 font-family: Poppins, sans-serif;
                 font-size: 2.5rem;
                 line-height: 1.4;
-                margin-bottom: 2rem;
                 font-weight: bold;
             }
 
@@ -41,6 +41,20 @@
                 font-size: 1.7rem;
                 font-weight: 500;
                 line-height: 1.5;
+            }
+        }
+    }
+}
+
+// Responsive
+
+@media screen and (max-width: 768px) {
+    .about-wrapper {
+        .about-container {
+            flex-direction: column;
+            align-items: center;
+            .description {
+                text-align: center;
             }
         }
     }

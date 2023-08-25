@@ -13,6 +13,25 @@ footer {
             align-items: center;
             display: flex;
             justify-content: space-between;
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .footer-social-links {
+                display: flex;
+                gap: 2rem;
+
+                i {
+                    color: #fff;
+                    font-size: 2.3rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
         }
     }
 }
