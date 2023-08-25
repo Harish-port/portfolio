@@ -16,7 +16,7 @@ function Header() {
   return (
     <div id='header'>
       <nav className={'header-container responsive'} id="myTopnav">
-        <h3 className='logo'>Harish.dev</h3>
+        <h3 className='logo'>Test.dev</h3>
         <ul>
           <li>
             <a onClick={handleSideNav} href='#home'>
