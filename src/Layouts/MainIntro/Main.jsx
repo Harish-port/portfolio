@@ -16,7 +16,6 @@ function Main() {
                             <h1>
                                 Front-End React Developer <img src="https://stefantopalovicdev.vercel.app/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="NA" />
                             </h1>
-                            {/* <img src="https://stefantopalovicdev.vercel.app/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="NA" /> */}
                             <p>
                                 Hi, I'm Harish. A passionate Front-End React Developer based in Karnataka, Bengaluru. 📍
                             </p>

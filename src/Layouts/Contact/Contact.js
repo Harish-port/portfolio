@@ -12,6 +12,15 @@ function Contact() {
         <div className='contact-icons'>
           <div class="contact__icon-box">
             <span>
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </span>
+            <div class="contact__info">
+              <h3>Email</h3>
+              <p>harish.port25@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact__icon-box">
+            <span>
               <i class="fa-solid fa-phone"></i>
             </span>
             <div class="contact__info">
@@ -26,15 +35,6 @@ function Contact() {
             <div class="contact__info">
               <h3>Location</h3>
               <p>Karnataka, Bengaluru</p>
-            </div>
-          </div>
-          <div class="contact__icon-box">
-            <span>
-              <i class="fa-solid fa-envelope-open-text"></i>
-            </span>
-            <div class="contact__info">
-              <h3>Email</h3>
-              <p>harish.port25@gmail.com</p>
             </div>
           </div>
         </div>
