@@ -211,55 +211,54 @@
 
 @media screen and (max-width: 768px) {
     .section-wrapper {
-        height: 115rem;
-    }
-
-    .section-wrapper .main-container .content {
-        .hero-main {
-            flex-direction: column-reverse;
-            margin-top: 25rem;
-            gap: 3rem;
-            text-align: center;
-        }
-
-        .skills-tools-section {
-            top: 80rem;
-        }
-
-        .section-wrapper .main-container {
+        height: 143rem;
+        .main-container{
+            padding: 7rem 4rem 0 4rem;
             margin: 0;
-        }
-
-        .hero-text .social-links {
-            justify-content: center;
-        }
-
-        .skills-heading {
-            position: absolute;
-            top: 80rem;
-        }
-
-        .skills-tools-section {
-            position: absolute;
-            top: 85rem;
-        }
-
-        .skills .logos ul,
-        .tools .logos ul {
-            display: grid;
-            grid-template-rows: 119px 119px;
-            grid-template-columns: 71px 71px 71px 71px 71px;
-            grid-column-gap: 23px;
-            grid-row-gap: 1px;
-        }
-
-        .skills {
-            top: 103rem;
-        }
-
-        .tools {
-            top: 103rem;
-        }
+            .content {
+                .hero-main {
+                    flex-direction: column-reverse;
+                    margin-top: 25rem;
+                    gap: 3rem;
+                    text-align: center;
+                }
+    
+                .skills-tools-section {
+                    top: 80rem;
+                }
+    
+                .hero-text .social-links {
+                    justify-content: center;
+                }
+    
+                .skills-heading {
+                    position: absolute;
+                    top: 88rem;
+                }
+    
+                .skills-tools-section {
+                    position: absolute;
+                    top: 93rem;
+                }
+    
+                .skills .logos ul,
+                .tools .logos ul {
+                    display: grid;
+                    grid-template-rows: 119px 119px;
+                    grid-template-columns: 71px 71px 71px 71px;
+                    grid-column-gap: 23px;
+                    grid-row-gap: 1px;
+                }
+    
+                .skills {
+                    top: 114rem;
+                }
+    
+                .tools {
+                    top: 110rem;
+                }
+            }
+        } 
     }
 
 }
