@@ -76,7 +76,6 @@
                         flex-direction: column;
                         text-align: center;
                         justify-content: center;
-                        width: 30rem;
                         width: 50%;
                         padding: 0 6rem;
                         height: 100%;
@@ -147,9 +146,13 @@
                 .projects-list-wrapper {
                     .projects-list {
                         flex-direction: column;
-                        height: 57rem;
+                        height: 50%;
                         align-items: center;
                         gap: 0;
+
+                        .project-info {
+                            width: unset;
+                        }
 
                         .project-display {
                             width: 100%;
