@@ -5,6 +5,7 @@ import './Header.scss';
 function Header() {
 
   const handleSideNav = () => {
+    console.log("called triggered");
     var x = document.getElementById("myTopnav");
     if (x.className === "header-container") {
       x.className += " responsive";
@@ -15,31 +16,31 @@ function Header() {
 
   return (
     <div id='header'>
-      <nav className={'header-container responsive'} id="myTopnav">
+      <nav className={'header-container'} id="myTopnav">
         <h3 className='logo'>Harish.dev</h3>
         <ul>
           <li>
-            <a onClick={handleSideNav} href='#home'>
+            <a onClick={()=>handleSideNav()} href='#home'>
               Home
             </a>
           </li>
           <li>
-            <a onClick={handleSideNav} href='#about'>
+            <a onClick={()=>handleSideNav()} href='#about'>
               About
             </a>
           </li>
           <li>
-            <a onClick={handleSideNav} href='#projects'>
+            <a onClick={()=>handleSideNav()} href='#projects'>
               Projects
             </a>
           </li>
           <li>
-            <a onClick={handleSideNav} href='#contact'>
+            <a onClick={()=>handleSideNav()} href='#contact'>
               Contact
             </a>
           </li>
           <li className='toggle-nav-icon'>
-            <a href="/#" className="icon" onClick={handleSideNav}>
+            <a href="/#" className="icon" onClick={()=>handleSideNav()}>
               <i className="fa fa-bars"></i>
             </a>
           </li>
