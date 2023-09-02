@@ -1,3 +1,5 @@
+@use '../../Styles/mixins.scss' as *;
+
 .section-wrapper {
     background-color: #f9f9f9;
     display: flex;
@@ -6,10 +8,19 @@
     position: relative;
     width: 100%;
 
+    @include md {
+        height: 143rem;
+    }
+
     .main-container {
         margin: 0 auto;
         max-width: 107rem;
         padding: 0 4rem;
+
+        @include md {
+            padding: 7rem 4rem 0 4rem;
+            margin: 0;
+        }
 
         .content {
             align-items: center;
@@ -26,13 +37,26 @@
                 justify-content: center;
                 position: relative;
 
+                @include md {
+                    flex-direction: column-reverse;
+                    margin-top: 25rem;
+                    gap: 3rem;
+                    text-align: center;
+                }
+
                 .hero-text {
                     h1 {
-                        color: #2d2e32;
+                        color: var(--black);
                         font-size: 5.5rem;
                         line-height: 1.2;
                         margin-bottom: 2rem;
                         margin-top: 2rem;
+                    }
+
+                    .social-links {
+                        @include md {
+                            justify-content: center;
+                        }
                     }
 
                     p {
@@ -56,11 +80,11 @@
                         z-index: 2;
 
                         a {
-                            color: #2d2e32;
+                            color: var(--black);
                             font-size: 3rem;
 
                             &:hover {
-                                color: #317EFB;
+                                color: var(--blue);
                             }
                         }
                     }
@@ -84,6 +108,11 @@
                 top: 41rem;
                 width: 100%;
                 justify-content: center;
+
+                @include md {
+                    position: absolute;
+                    top: 83rem;
+                }
             }
 
             .skills-tools-section {
@@ -98,6 +127,11 @@
                 top: 51rem;
                 width: 100%;
                 justify-content: center;
+
+                @include md {
+                    position: absolute;
+                    top: 89rem;
+                }
 
                 .toggle-button {
                     display: flex;
@@ -119,7 +153,7 @@
                     font-size: 1.8rem;
                     height: 40px;
                     width: 15rem;
-                    // background-color: #2D2E32;
+                    // background-color: var(--black);
                     box-shadow: 0 0 10px rgba(0, 0, 0, .09);
                     // color: white;
                     padding: 0 20px;
@@ -144,7 +178,7 @@
                 }
             }
 
-
+           
 
             .skills,
             .tools {
@@ -161,7 +195,7 @@
 
                 .tech-stack-list {
                     // border-right: 2px solid rgba(45, 46, 50, .5);
-                    color: #2d2e32;
+                    color: var(--black);
                     font-family: Mulish, sans-serif;
                     font-weight: 600;
                     // margin-right: 4rem;
@@ -173,6 +207,14 @@
                         display: flex;
                         list-style: none;
                         gap: 3rem;
+
+                        @include md {
+                            display: grid;
+                            grid-template-rows: 119px 119px;
+                            grid-template-columns: 71px 71px 71px 71px;
+                            grid-column-gap: 23px;
+                            grid-row-gap: 1px;
+                        }
 
                         li {
                             align-items: center;
@@ -203,62 +245,20 @@
                     }
                 }
             }
+            .skills {
+                @include md {
+                    top: 110rem;
+                }
+            }
+
+            .tools {
+                @include md {
+                    top: 110rem;
+                }
+            }
         }
     }
 }
 
 // Responsive
 
-@media screen and (max-width: 768px) {
-    .section-wrapper {
-        height: 143rem;
-        .main-container{
-            padding: 7rem 4rem 0 4rem;
-            margin: 0;
-            .content {
-                .hero-main {
-                    flex-direction: column-reverse;
-                    margin-top: 25rem;
-                    gap: 3rem;
-                    text-align: center;
-                }
-    
-                .skills-tools-section {
-                    top: 80rem;
-                }
-    
-                .hero-text .social-links {
-                    justify-content: center;
-                }
-    
-                .skills-heading {
-                    position: absolute;
-                    top: 88rem;
-                }
-    
-                .skills-tools-section {
-                    position: absolute;
-                    top: 93rem;
-                }
-    
-                .skills .logos ul,
-                .tools .logos ul {
-                    display: grid;
-                    grid-template-rows: 119px 119px;
-                    grid-template-columns: 71px 71px 71px 71px;
-                    grid-column-gap: 23px;
-                    grid-row-gap: 1px;
-                }
-    
-                .skills {
-                    top: 114rem;
-                }
-    
-                .tools {
-                    top: 110rem;
-                }
-            }
-        } 
-    }
-
-}
