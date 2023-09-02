@@ -35,6 +35,7 @@ function Contact() {
             <div className="contact__info">
               <h3>Location</h3>
               <p>Karnataka, Bengaluru</p>
+              <p>Karnataka, Bengaluru</p>
             </div>
           </div>
         </div>
