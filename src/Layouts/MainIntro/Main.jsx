@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Main.scss';
 import Hero from '../../Assets/Images/trek55.png'
 import data from '../../Utils/data.json';
+
 function Main() {
     const [highlightedButton, setHighlightedButton] = useState(1);
     const handleButtonClick = (buttonId) => {
