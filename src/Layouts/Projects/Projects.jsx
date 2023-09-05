@@ -24,6 +24,8 @@ function Projects() {
                                         <div className='tech-stack'>
                                             <p className='tech1'>{techstack[0]}</p>
                                             <p className='tech2'>{techstack[1]}</p>
+                                            <p className='tech3'>{techstack[2]}</p>
+                                            <p className='tech4'>{techstack[3]}</p>
                                         </div>
                                         <div className="project-source-view">
                                             <a target="_blank" href={links.sourcecode} rel="noreferrer">Code <i className="fa-brands fa-github"></i></a>
