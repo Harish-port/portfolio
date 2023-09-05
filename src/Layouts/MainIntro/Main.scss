@@ -51,6 +51,9 @@
                         line-height: 1.2;
                         margin-bottom: 2rem;
                         margin-top: 2rem;
+                        @include xs{
+                            font-size: 5rem;
+                        }
                     }
 
                     .social-links {
@@ -113,6 +116,9 @@
                     position: absolute;
                     top: 83rem;
                 }
+                @include xs{
+                    top: 86rem;
+                }
             }
 
             .skills-tools-section {
@@ -132,6 +138,9 @@
                     position: absolute;
                     top: 89rem;
                 }
+                @include xs{
+                    top: 93rem;
+                }
 
                 .toggle-button {
                     display: flex;
@@ -140,6 +149,10 @@
                     text-align: center;
                     justify-content: center;
                     line-height: 3rem;
+                    @include xs{
+                        flex-direction: column;
+                        align-items: center;
+                    }
                 }
 
                 .tech-stack-list,
@@ -214,6 +227,10 @@
                             grid-row-gap: 1px;
                         }
 
+                        @include xs {
+                            grid-template-columns: 71px 71px 71px;
+                        }
+
                         li {
                             align-items: center;
                             background-color: #fff;
@@ -247,6 +264,9 @@
             .skills {
                 @include md {
                     top: 110rem;
+                }
+                @include xs{
+                    top: 116rem;
                 }
             }
 

@@ -5,7 +5,6 @@ import './Header.scss';
 function Header() {
 
   const handleSideNav = (data) => {
-    console.log("called triggered");
     var x = document.getElementById("myTopnav");
     if (x.className === "header-container" && data === "sidenav") {
       x.className += " responsive";

@@ -98,14 +98,16 @@
                         flex-direction: column;
                         text-align: center;
                         justify-content: center;
-                        width: 50%;
                         padding: 0 6rem;
                         height: 100%;
 
                         @include md {
-                            width: unset;
                             margin-bottom: 1rem;
                             margin-top: 2rem;
+                        }
+
+                        @include xs {
+                            padding: 0;
                         }
 
                         .tech-stack {
@@ -113,6 +115,10 @@
                             gap: 1rem;
                             justify-content: center;
                             margin-top: 1rem;
+
+                            @include xs {
+                                flex-direction: column;
+                            }
 
                             .tech1,
                             .tech2,
@@ -165,4 +171,3 @@
         }
     }
 }
-

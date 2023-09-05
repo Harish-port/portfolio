@@ -14,6 +14,10 @@
     width: 100%;
     z-index: 200;
 
+    @include xs {
+        padding-left: 0.125rem;
+    }
+
     &.responsive {
         @include md {
             position: fixed;
