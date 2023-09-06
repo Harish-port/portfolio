@@ -8,18 +8,6 @@
     position: relative;
     width: 100%;
 
-    @include lg {
-        height: 66vh;
-    }
-
-    @include xl {
-        height: 66vh;
-    }
-
-    @include xxl {
-        height: 66vh;
-    }
-
     @include md {
         height: 143rem;
     }
