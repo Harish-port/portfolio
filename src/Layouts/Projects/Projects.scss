@@ -105,6 +105,8 @@
                         @include md {
                             margin-bottom: 1rem;
                             margin-top: 2rem;
+                            width: 100%;
+                            padding: 0;
                         }
 
                         @include xs {
@@ -145,6 +147,11 @@
                             gap: 1rem;
                             justify-content: space-evenly;
                             margin-top: 3rem;
+
+                            @include md {
+                                justify-content: center;
+                                margin-top: 1rem;
+                            }
 
                             a {
                                 color: var(--black);
