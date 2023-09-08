@@ -81,21 +81,6 @@
         },
         {
             "image": "https://img.icons8.com/?size=512&id=33039&format=png",
-            "title": "PROJECT TITLE 1",
-            "description": "lorem dskjlhadkjh skjdhksaj kjdhkasjh dkj dkasjh dkjash dkjas hdk jasd aksh dkjsah dkjashdksajhdkasjh dkjashkd dshjs hdsada",
-            "techstack": [
-                "React",
-                "Redux",
-                "SASS",
-                "Typescript"
-            ],
-            "links": {
-                "sourcecode": "https://github.com/Harish-port",
-                "livedemolink": "https://github.com/Harish-port"
-            }
-        },
-        {
-            "image": "https://img.icons8.com/?size=512&id=33039&format=png",
             "title": "PROJECT TITLE 2",
             "description": "lorem dskjlhadkjh skjdhksaj kjdhkasjh dkj dkasjh dkjash dkjas hdk jasd aksh dkjsah dkjashdksajhdkasjh dkjashkd dshjs hdsada",
             "techstack": [
