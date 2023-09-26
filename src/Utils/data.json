@@ -35,6 +35,10 @@
         {
             "name": "Typescript",
             "image": "https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png"
+        },
+        {
+            "name": "Vue Js",
+            "image": "https://vuejs.org/images/logo.png"
         }
     ],
     "tools": [
