@@ -1,285 +1,290 @@
-@use '../../Styles/mixins.scss' as *;
+@use "../../Styles/mixins.scss" as *;
 
 .section-wrapper {
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    height: 110vh;
-    position: relative;
-    width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  position: relative;
+  width: 100%;
+
+  @include md {
+    height: 140rem;
+  }
+  @include xs {
+    height: 160rem;
+  }
+
+
+  .main-container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
 
     @include md {
-        height: 160rem;
+      padding: 7rem 4rem 0 4rem;
+      margin: 0;
     }
 
-    .main-container {
-        margin: 0 auto;
-        max-width: 107rem;
-        padding: 0 4rem;
+    .content {
+      align-items: center;
+      display: flex;
+      gap: 10rem;
+      height: 65rem;
+      justify-content: center;
+      position: relative;
+
+      .hero-main {
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+        justify-content: center;
+        position: relative;
 
         @include md {
-            padding: 7rem 4rem 0 4rem;
-            margin: 0;
+          flex-direction: column-reverse;
+          margin-top: 25rem;
+          gap: 3rem;
+          text-align: center;
         }
 
-        .content {
-            align-items: center;
+        .hero-text {
+          h1 {
+            color: var(--black);
+            font-size: 5.5rem;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+
+            @include xs {
+              font-size: 5rem;
+            }
+          }
+
+          .social-links {
+            @include md {
+              justify-content: center;
+            }
+          }
+
+          p {
+            color: #555;
+            font-family: Mulish, sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.6;
+          }
+
+          .hello-hand-icon {
+            display: inline;
+          }
+
+          span {
+            cursor: pointer;
             display: flex;
-            gap: 10rem;
-            height: 65rem;
-            justify-content: center;
+            gap: 1.3rem;
+            margin: 2.5rem 0;
             position: relative;
+            z-index: 2;
 
-            .hero-main {
-                display: flex;
-                align-items: center;
-                gap: 10rem;
-                justify-content: center;
-                position: relative;
+            a {
+              color: var(--black);
+              font-size: 3rem;
 
-                @include md {
-                    flex-direction: column-reverse;
-                    margin-top: 25rem;
-                    gap: 3rem;
-                    text-align: center;
-                }
-
-                .hero-text {
-                    h1 {
-                        color: var(--black);
-                        font-size: 5.5rem;
-                        line-height: 1.2;
-                        margin-bottom: 2rem;
-                        margin-top: 2rem;
-
-                        @include xs {
-                            font-size: 5rem;
-                        }
-                    }
-
-                    .social-links {
-                        @include md {
-                            justify-content: center;
-                        }
-                    }
-
-                    p {
-                        color: #555;
-                        font-family: Mulish, sans-serif;
-                        font-size: 1.8rem;
-                        font-weight: 500;
-                        line-height: 1.6;
-                    }
-
-                    .hello-hand-icon {
-                        display: inline;
-                    }
-
-                    span {
-                        cursor: pointer;
-                        display: flex;
-                        gap: 1.3rem;
-                        margin: 2.5rem 0;
-                        position: relative;
-                        z-index: 2;
-
-                        a {
-                            color: var(--black);
-                            font-size: 3rem;
-
-                            &:hover {
-                                color: var(--blue);
-                            }
-                        }
-                    }
-
-                    img {
-                        height: 6rem;
-                    }
-                }
+              &:hover {
+                color: var(--blue);
+              }
             }
+          }
 
-            .skills-heading {
-                align-items: center;
-                bottom: 3.125rem;
-                color: black;
-                display: flex;
-                font-weight: bold;
-                font-size: 2rem;
-                left: 0;
-                right: 50%;
-                position: absolute;
-                top: 41rem;
-                width: 100%;
-                justify-content: center;
-
-                @include md {
-                    position: absolute;
-                    top: 83rem;
-                }
-
-                @include xs {
-                    top: 86rem;
-                }
-            }
-
-            .skills-tools-section {
-                align-items: center;
-                bottom: 3.125rem;
-                color: #767676;
-                display: flex;
-                font-size: 1.7rem;
-                left: 0;
-                right: 50%;
-                position: absolute;
-                top: 51rem;
-                width: 100%;
-                justify-content: center;
-
-                @include md {
-                    position: absolute;
-                    top: 89rem;
-                }
-
-                @include xs {
-                    top: 93rem;
-                }
-
-                .toggle-button {
-                    display: flex;
-                    gap: 2rem;
-                    width: 30rem;
-                    text-align: center;
-                    justify-content: center;
-                    line-height: 3rem;
-
-                    @include xs {
-                        flex-direction: column;
-                        align-items: center;
-                    }
-                }
-
-                .tech-stack-list,
-                .tools-list {
-                    display: inline-block;
-                    outline: 0;
-                    // border: none;
-                    cursor: pointer;
-                    font-weight: 500;
-                    border-radius: 4px;
-                    font-size: 1.8rem;
-                    height: 40px;
-                    width: 15rem;
-                    // background-color: var(--black);
-                    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
-                    // color: white;
-                    padding: 0 20px;
-                    background-color: white;
-                    color: black;
-                    border: 1px solid black;
-
-                    &:hover {
-                        background-color: black;
-                        color: white;
-                    }
-
-                    &.selected {
-                        background-color: black;
-                        color: white;
-                    }
-
-                    &.unselected {
-                        background-color: white;
-                        color: black;
-                    }
-                }
-            }
-
-            .skills,
-            .tools {
-                align-items: center;
-                bottom: 3.125rem;
-                color: #767676;
-                display: flex;
-                font-size: 1.7rem;
-                left: 0;
-                top: 65rem;
-                position: absolute;
-                width: 100%;
-                justify-content: center;
-
-                .tech-stack-list {
-                    // border-right: 2px solid rgba(45, 46, 50, .5);
-                    color: var(--black);
-                    font-family: Mulish, sans-serif;
-                    font-weight: 600;
-                    // margin-right: 4rem;
-                    // padding-right: 2rem;
-                }
-
-                .logos {
-                    ul {
-                        display: flex;
-                        list-style: none;
-                        gap: 3rem;
-
-                        @include md {
-                            display: grid;
-                            grid-template-rows:119px 119px 119px 119px;
-                            grid-template-columns: 71px 71px 71px 71px;
-                            grid-column-gap: 23px;
-                            grid-row-gap: 1px;
-                        }
-
-                        @include xs {
-                            grid-template-columns: 71px 71px 71px;
-                        }
-
-                        li {
-                            align-items: center;
-                            background-color: #fff;
-                            border-radius: 50%;
-                            box-shadow: 0 0 0.625rem rgba(0, 0, 0, .09);
-                            cursor: pointer;
-                            display: flex;
-                            height: 6.5rem;
-                            justify-content: center;
-                            width: 6.5rem;
-                            position: relative;
-
-                            .img-description {
-                                position: absolute;
-                                top: 7.5rem;
-                                font-size: 1.5rem;
-                                font-weight: 600;
-                                color: black;
-                            }
-                        }
-
-                        li img {
-                            height: 3.4rem;
-                            width: 3.4rem rem;
-                        }
-
-                    }
-                }
-            }
-
-            .skills {
-                @include md {
-                    top: 110rem;
-                }
-
-                @include xs {
-                    top: 126rem;
-                }
-            }
-
-            .tools {
-                @include md {
-                    top: 110rem;
-                }
-            }
+          img {
+            height: 6rem;
+          }
         }
+      }
+
+      .skills-heading {
+        align-items: center;
+        bottom: 3.125rem;
+        color: black;
+        display: flex;
+        font-weight: bold;
+        font-size: 2rem;
+        left: 0;
+        right: 50%;
+        position: absolute;
+        top: 41rem;
+        width: 100%;
+        justify-content: center;
+
+        @include md {
+          position: absolute;
+          top: 83rem;
+        }
+
+        @include xs {
+          top: 86rem;
+        }
+      }
+
+      .skills-tools-section {
+        align-items: center;
+        bottom: 3.125rem;
+        color: #767676;
+        display: flex;
+        font-size: 1.7rem;
+        left: 0;
+        right: 50%;
+        position: absolute;
+        top: 51rem;
+        width: 100%;
+        justify-content: center;
+
+        @include md {
+          position: absolute;
+          top: 89rem;
+        }
+
+        @include xs {
+          top: 95rem;
+        }
+
+        .toggle-button {
+          display: flex;
+          gap: 2rem;
+          width: 30rem;
+          text-align: center;
+          justify-content: center;
+          line-height: 3rem;
+
+          @include xs {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+        .tech-stack-list,
+        .tools-list {
+          display: inline-block;
+          outline: 0;
+          // border: none;
+          cursor: pointer;
+          font-weight: 500;
+          border-radius: 4px;
+          font-size: 1.8rem;
+          height: 40px;
+          width: 15rem;
+          // background-color: var(--black);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+          // color: white;
+          padding: 0 20px;
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+
+          &.selected {
+            background-color: black;
+            color: white;
+          }
+
+          &.unselected {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+
+      .skills,
+      .tools {
+        align-items: center;
+        bottom: 3.125rem;
+        color: #767676;
+        display: flex;
+        font-size: 1.7rem;
+        left: 0;
+        top: 72rem;
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+
+        .tech-stack-list {
+          // border-right: 2px solid rgba(45, 46, 50, .5);
+          color: var(--black);
+          font-family: Mulish, sans-serif;
+          font-weight: 600;
+          // margin-right: 4rem;
+          // padding-right: 2rem;
+        }
+
+        .logos {
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 3rem;
+            justify-content: center;
+            @include md {
+              // display: grid;
+              // grid-template-rows:119px 119px 119px 119px;
+              // grid-template-columns: 71px 71px 71px 71px;
+              // grid-column-gap: 23px;
+              // grid-row-gap: 1px;
+            }
+
+            @include xs {
+              // grid-template-columns: 71px 71px 71px;
+            }
+
+            li {
+              align-items: center;
+              background-color: #fff;
+              border-radius: 50%;
+              box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.09);
+              cursor: pointer;
+              display: flex;
+              height: 6.5rem;
+              justify-content: center;
+              width: 6.5rem;
+              position: relative;
+              margin-bottom: 3rem;
+
+              .img-description {
+                position: absolute;
+                top: 7.5rem;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: black;
+              }
+            }
+
+            li img {
+              height: 3.4rem;
+              width: 3.4rem rem;
+            }
+          }
+        }
+      }
+
+      .skills {
+        @include md {
+          top: 110rem;
+        }
+
+        @include xs {
+          top: 127rem;
+        }
+      }
+
+      .tools {
+        @include md {
+          top: 110rem;
+        }
+      }
     }
+  }
 }
