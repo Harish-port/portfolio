@@ -9,7 +9,7 @@
     width: 100%;
 
     @include md {
-        height: 143rem;
+        height: 160rem;
     }
 
     .main-container {
@@ -225,7 +225,7 @@
 
                         @include md {
                             display: grid;
-                            grid-template-rows: 119px 119px;
+                            grid-template-rows:119px 119px 119px 119px;
                             grid-template-columns: 71px 71px 71px 71px;
                             grid-column-gap: 23px;
                             grid-row-gap: 1px;
@@ -271,7 +271,7 @@
                 }
 
                 @include xs {
-                    top: 116rem;
+                    top: 126rem;
                 }
             }
 
