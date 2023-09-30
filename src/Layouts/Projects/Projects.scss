@@ -1,181 +1,177 @@
-@use '../../Styles/mixins.scss' as *;
+@use "../../Styles/mixins.scss" as *;
 
 .projects {
-    background-color: #f9f9f9;
-    padding: 15rem 0;
+  background-color: #f9f9f9;
+  padding: 15rem 0;
 
-    @include md {
-        padding: 5rem 0;
+  @include md {
+    padding: 5rem 0;
+  }
 
-    }
+  .container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
 
-    .container {
-        margin: 0 auto;
-        max-width: 107rem;
-        padding: 0 4rem;
+    .project-content {
+      .project-title {
+        color: var(--black);
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        position: relative;
+        text-transform: uppercase;
+      }
 
-        .project-content {
-            .project-title {
-                color: var(--black);
-                font-size: 1.7rem;
-                margin-bottom: 2rem;
-                position: relative;
-                text-transform: uppercase;
+      p {
+        color: #147efb;
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+
+      .project-description {
+        color: #767676;
+        font-size: 1.7rem;
+        font-weight: 500;
+        text-align: center;
+        text-transform: none;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        color: var(--black);
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .projects-list-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        .projects-list {
+          display: flex;
+          height: 37rem;
+          padding: 2rem;
+          background-color: #fff;
+          border-radius: 1.7rem;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          width: 100%;
+
+          @include md {
+            flex-direction: column;
+            height: 50%;
+            align-items: center;
+            gap: 0;
+          }
+
+          .project-display {
+            width: 50%;
+
+            @include md {
+              width: 100%;
             }
 
-            p {
-                color: #147efb;
-                font-size: 1.7rem;
-                font-weight: 700;
+            img {
+              background-color: hsla(0, 0%, 46%, 0.2);
+              border-radius: 1.7rem;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              height: auto;
+              overflow: hidden;
+              width: 20%;
+              transform: translateY(0%);
+              transition: transform 10s ease-in-out 0s;
+              height: 100%;
+              width: 100%;
+
+              @include md {
+                width: inherit;
+              }
+            }
+          }
+
+          .project-info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            padding: 0 6rem;
+            height: 100%;
+            width: 50%;
+
+            @include md {
+              margin-bottom: 1rem;
+              margin-top: 2rem;
+              width: 100%;
+              padding: 0;
+            }
+
+            @include xs {
+              padding: 0;
+            }
+
+            .tech-stack {
+              display: flex;
+              gap: 1rem;
+              justify-content: center;
+              margin-top: 1rem;
+
+              @include xs {
+                flex-direction: column;
+              }
+
+              .tech1,
+              .tech2,
+              .tech3,
+              .tech4 {
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                color: #000 !important;
+                font-family: Mulish, sans-serif !important;
+                font-weight: 600 !important;
+                padding: 1rem 1.3rem;
                 margin-bottom: 1rem;
-                text-transform: uppercase;
-            }
-
-            .project-description {
-                color: #767676;
                 font-size: 1.7rem;
                 font-weight: 500;
                 text-align: center;
                 text-transform: none;
-                margin-bottom: 1rem;
+                border-radius: 1rem;
+              }
             }
 
-            h4 {
+            .project-source-view {
+              display: flex;
+              gap: 1rem;
+              justify-content: space-evenly;
+              margin-top: 3rem;
+
+              @include md {
+                justify-content: center;
+                margin-top: 1rem;
+              }
+
+              a {
                 color: var(--black);
-                font-size: 2.5rem;
-                margin-bottom: 3rem;
-            }
-
-            .projects-list-wrapper {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 1rem 1.3rem;
+                border-radius: 1rem;
+                font-size: 1.7rem;
+                font-weight: 500;
+                text-decoration: none;
+                align-items: center;
                 display: flex;
-                flex-direction: column;
-                gap: 5rem;
-
-                .projects-list {
-                    display: flex;
-                    height: 37rem;
-                    padding: 2rem;
-                    background-color: #fff;
-                    border-radius: 1.7rem;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-                    width: 100%;
-
-                    @include md {
-                        flex-direction: column;
-                        height: 50%;
-                        align-items: center;
-                        gap: 0;
-                    }
-
-                    .project-display {
-                        width: 50%;
-
-                        @include md {
-                            width: 100%;
-                        }
-
-                        img {
-                            background-color: hsla(0, 0%, 46%, 0.2);
-                            border-radius: 1.7rem;
-                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                            height: auto;
-                            overflow: hidden;
-                            width: 20%;
-                            transform: translateY(0%);
-                            transition: transform 10s ease-in-out 0s;
-                            height: 100%;
-                            width: 100%;
-
-                            @include md {
-                                width: inherit;
-
-                            }
-                        }
-                    }
-
-                    .project-info {
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                        justify-content: center;
-                        padding: 0 6rem;
-                        height: 100%;
-                        width: 50%;
-
-                        @include md {
-                            margin-bottom: 1rem;
-                            margin-top: 2rem;
-                            width: 100%;
-                            padding: 0;
-                        }
-
-                        @include xs {
-                            padding: 0;
-                        }
-
-                        .tech-stack {
-                            display: flex;
-                            gap: 1rem;
-                            justify-content: center;
-                            margin-top: 1rem;
-
-                            @include xs {
-                                flex-direction: column;
-                            }
-
-                            .tech1,
-                            .tech2,
-                            .tech3,
-                            .tech4 {
-                                background-color: #fff;
-                                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-                                color: #000 !important;
-                                font-family: Mulish, sans-serif !important;
-                                font-weight: 600 !important;
-                                padding: 1rem 1.3rem;
-                                margin-bottom: 1rem;
-                                font-size: 1.7rem;
-                                font-weight: 500;
-                                text-align: center;
-                                text-transform: none;
-                                border-radius: 1rem;
-                            }
-                        }
-
-                        .project-source-view {
-                            display: flex;
-                            gap: 1rem;
-                            justify-content: space-evenly;
-                            margin-top: 3rem;
-
-                            @include md {
-                                justify-content: center;
-                                margin-top: 1rem;
-                            }
-
-                            a {
-                                color: var(--black);
-                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                                padding: 1rem 1.3rem;
-                                border-radius: 1rem;
-                                font-size: 1.7rem;
-                                font-weight: 500;
-                                text-decoration: none;
-                                align-items: center;
-                                display: flex;
-
-                                .fa-github {
-                                    padding-left: 1rem;
-                                }
-
-                                &:hover {
-                                    color: var(--blue);
-                                }
-                            }
-                        }
-                    }
+                svg {
+                  margin-left: 0.5rem;
                 }
+                &:hover {
+                  color: var(--blue);
+                }
+              }
             }
+          }
         }
+      }
     }
+  }
 }
