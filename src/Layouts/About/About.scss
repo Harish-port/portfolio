@@ -1,7 +1,7 @@
 @use '../../Styles/mixins.scss' as *;
 
 .about-wrapper {
-    padding: 15rem 0;
+    padding: 10rem 0;
 
     @include md {
         padding: 5rem 0;
