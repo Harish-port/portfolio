@@ -7,7 +7,7 @@ function Projects() {
     <div className="projects" id="projects">
       <div className="container">
         <div className="project-content">
-          <p>PORTFOLIO</p>
+          <p>Projects</p>
           <h4 className="heading">
             Each project is a unique piece of development 🧩
           </h4>
