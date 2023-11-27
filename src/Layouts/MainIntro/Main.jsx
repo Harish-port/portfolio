@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Main.scss';
 import Hero from '../../Assets/Images/trek55.png'
 import data from '../../Utils/data.json';
-
+import { motion } from 'framer-motion';
 function Main() {
     const [highlightedButton, setHighlightedButton] = useState(1);
     const handleButtonClick = (buttonId) => {
@@ -30,7 +30,7 @@ function Main() {
                             </span>
                         </div>
                         <div className="hero-image">
-                            <img src={Hero} alt="NA" />
+                            <motion.img animate={{scale:1}} initial={{scale:0}} src={Hero} alt="NA" />
                         </div>
                     </div>
                     <p className='skills-heading'>Skills</p>
