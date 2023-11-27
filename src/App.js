@@ -3,7 +3,7 @@ import React, { Suspense } from "react";
 import "./App.css";
 import Main from "./Layouts/MainIntro/Main";
 import Footer from "./Layouts/Footer/Footer";
-import About from "./Layouts/About/About";
+// import About from "./Layouts/About/About";
 import Contact from "./Layouts/Contact/Contact";
 const Projects = React.lazy(() => import("./Layouts/Projects/Projects"));
 
